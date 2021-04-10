@@ -16,5 +16,15 @@ namespace Av3C5Ex02
         {
             InitializeComponent();
         }
+
+        private void btnConverter_Click(object sender, EventArgs e)
+        {
+            int quantidade = int.Parse(txtQuantidade.Text);
+            double valor = double.Parse(txtValor.Text), dolar = 5.68, convercao = 0;
+
+            convercao = quantidade * valor * dolar;
+            lblFim.Text = "Converção para R$: " + convercao;
+
+        }
     }
 }
